@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loan Application</title>
+	<link rel="stylesheet" type="text/css" href="validation.css">
+</head>
+<body>
+	<form action="#" method="post">
+		<h2>Loan Application</h2>
+		<fieldset>
+			<legend>Personal Info</legend>
+			<br><label for="firstName">First Name</label><br>
+			<input type="text" id="first_name" name="firstName" placeholder="First">
+			<input type="text" id="mid_initial" name="middleInitial" placeholder="Middle Initial">
+			<input type="text" id="last_name" name="lastName" placeholder="Last"><br><br>
+
+			<label for="street">Address</label><br>
+			<input type="text" id="street" name="address" placeholder="Street">
+			<input type="text" id="city" name="city" placeholder="City">
+			<input type="text" id="state" name="state" placeholder="State">
+			<input type="text" id="zip_code" name="zipCode" placeholder="5-digit Zip Code"><br><br>
+
+			<label for="job">Occupation</label><br>
+			<input type="text" id="job" name="occupation"><br><br>
+
+			Employer<br>
+			<input type="text" id="employer" name="employer"><br><br>
+
+			Employer Address<br>
+			<input type="text" id="employer_street" name="address" placeholder="Street">
+			<input type="text" id="employer_city" name="city" placeholder="City">
+			<input type="text" id="employer_state" name="state" placeholder="State">
+			<input type="text" id="employer_zip" name="zipCode" placeholder="5-digit Zip Code"><br><br>
+
+			<label for="mail">Email</label><br>
+			<input type="email" id="mail" name="something" placeholder="email address" required><br><br>
+
+			<label for="phone">Phone Number</label><br>
+			<input type="tel" id="phone" name="user_tel" placeholder="555-555-5555"><br><br>
+			<!-- <input type="text" name="user_tel"> -->
+
+			<label for="usrLinkedIn">LinkedIn Profile</label><br>
+			<input type="url" id="usrLinkedIn" name="url" placeholder="URL"><br><br>
+
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Loan Information</legend>
+			<br>Loan Type<br>
+			<select name="loanType">
+				<option value="commercial">Commercial</option>
+				<option value="real_estate">Real Estate</option>
+				<option value="personal">Personal</option>
+				<option value="mortgage">Mortgage</option>
+			</select><br>
+
+			<br>Loan Amount<br>
+			<input type="text" name="loanAmt" placeholder="20,000"><br><br>
+
+			Desired Length of Loan:
+			<input type="radio" name="months" value="60"> 5 years
+			<input type="radio" name="months" value="180"> 15 years
+			<input type="radio" name="months" value="360"> 30 years<br><br>
+
+			<input type="checkbox" name="specCondition" value="downpayment"> I have a down payment<br>
+			<input type="checkbox" name="specCondition" value="outState"> Out-of-State resident<br>
+			<input type="checkbox" name="specCondition" value="married"> Married<br>
+			<input type="checkbox" name="specCondition" value="co-signed"> Loan will be co-signed<br><br>
+
+			Addtional Comments<br>
+			<textarea name="comments"></textarea><br><br>
+
+		</fieldset>
+
+	</form>
+
+</body>
+</html>
